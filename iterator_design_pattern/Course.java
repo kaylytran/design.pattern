@@ -10,7 +10,7 @@ public class Course {
 
     // public operations 
 
-    // seting name and title from given parameters 
+    // setting name and title from given parameters 
     public Course(String name, String title) {
         this.name = name; 
         this.title = title; 
@@ -19,8 +19,6 @@ public class Course {
     // will add assignment to array with given assignment 
     public void addAssignment(String title, String description, Topic topic) {
         Assignment assignment = new Assignment(title, description, topic);
-        
-
         if (count >= assignments.length) { // if there is not enough space the array will grow
 			growArray(assignments);
             assignments[count] = assignment; // then assign the index with parameter 
