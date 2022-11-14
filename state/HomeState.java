@@ -1,4 +1,4 @@
-public class HomeState {
+public class HomeState implements State{
     
     private TV tv; 
 

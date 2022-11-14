@@ -1,9 +1,9 @@
-public class HuluState {
+public class HuluState implements State{
 
     private TV tv; 
     private String[] movies; 
     private String[] tvShows; 
-    
+
     public String pressHomeButton() {
 
     }

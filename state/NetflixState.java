@@ -1,4 +1,4 @@
-public class NetflixState {
+public class NetflixState implements State{
     
     private TV tv; 
     private String[] movies; 
