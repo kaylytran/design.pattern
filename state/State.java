@@ -1,8 +1,22 @@
-public interface State {
-    
-    public String pressHomeButton();
-    public String pressNetflixButton(); 
-    public String pressHuluButton(); 
-    public String pressMovieButton(); 
-    public String pressTVButton(); 
+public class State {
+
+    public String pressHomeButton() {
+        return "Loading the Home Screen...";
+    }
+
+    public String pressNetflixButton() {
+        return "Loading Netflix..."; 
+    }
+
+    public String pressHuluButton() {
+        return "Loading Hulu..."; 
+    }
+
+    public String pressMovieButton() {
+        return "";
+    } 
+
+    public String pressTVButton() {
+        return ""; 
+    }
 }
