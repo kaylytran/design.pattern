@@ -1,5 +1,15 @@
+/** 
+ * NetflixState implements State
+ * Returns a string when a button is 
+ * pressed while in NetflixState 
+ * 
+ * @author Kayly Tran 
+ */
 public class NetflixState implements State {
-
+    
+    /**
+     * Private instance variables
+     */
     private TV tv; 
     private String[] movies = {"- The Land Before Time",
                                "- Frozen",
@@ -10,10 +20,19 @@ public class NetflixState implements State {
                                 "- Garfield",
                                 "- Teenage Mutant Ninja Turtles\n"}; 
 
+    /**
+     * Parameterized Constructor
+     * @param tv
+     */
     public NetflixState(TV tv) {
         this.tv = tv; 
     }
 
+    /**
+     * Sets the current state to the new state
+     * and/or returns appropriate text for each method
+     * @return Sting
+     */
     public String pressHomeButton() {
         tv.setState(tv.getHomeState());
         return "Loading Home Screen...\n"; 
