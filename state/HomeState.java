@@ -15,12 +15,11 @@ public class HomeState implements State{
     }
 
     public String pressMovieButton() {
-        return super.pressMovieButton(); 
+        return "Home: You must pick an app to show moives,"; 
     }
 
     public String pressTVButton() {
-        return super.pressTVButton(); 
+        return "Home:LK You must pick an app to show tv shows"; 
     }
-
 
 }

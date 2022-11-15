@@ -8,18 +8,21 @@ public class TV {
     public TV() {
         HomeState = new HomeState();
         NetflixState = new NetflixState();
-        HuluState = new HuluState(); 
+        HuluState = new HuluState();
     }
 
     public String pressHomeButton() {
+        TV.HomeState();
         return state.pressHomeButton();
     }
 
     public String pressNetflixButton() {
+        TV.NetflixState(); 
         return state.pressNetflixButton(); 
     }
 
     public String pressHuluButton() {
+        TV.HuluState(); 
         return state.pressHuluButton(); 
     }
 

@@ -17,10 +17,17 @@ public class HuluState implements State{
     }
 
     public String pressMovieButton() {
-        return super.pressMovieButton(); 
+        String[] movies = new String[] {"- Cars",
+                                        "- Cinderella",
+                                        "- Wall-E", 
+                                        "- ET"};
+        return "Hulu Movies:\n" + movies; 
     }
 
     public String pressTVButton() {
-        return super.pressTVButton(); 
+        String[] tvShows = new String[] {"- Seasame Street",
+                                         "- Care Bears",
+                                         "- Looney Tunes"};
+        return "Hulu Movies:\n" + tvShows;; 
     }
 }

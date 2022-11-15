@@ -17,10 +17,18 @@ public class NetflixState implements State{
     }
 
     public String pressMovieButton() {
-        return super.pressMovieButton(); 
+        String[] movies = new String[] {"- The Land Before Time",
+                                        "- Frozen",
+                                        "- The Little Mermaid", 
+                                        "- Ice Age"};
+        return "Netflix Movies:\n" + movies;  
     }
 
     public String pressTVButton() {
-        return super.pressTVButton(); 
+        String[] tvShows = new String[] {"- Peppa Pig",
+                                         "- My Little Pony",
+                                         "- Garfield", 
+                                         "- Teenage Mutant Nija Turtles"};
+        return "Netflix TV Shows:\n" + tvShows;
     }
 }
