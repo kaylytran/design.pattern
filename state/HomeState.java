@@ -7,24 +7,24 @@ public class HomeState implements State{
     }
 
     public String pressHomeButton() {
-        return "TV is already on the home screen";
+        return "TV is already on the home screen\n";
     }
 
     public String pressNetflixButton() {
         tv.setState(tv.getNetflixState());
-        return "Loading Netflix...";
+        return "Loading Netflix...\n";
     }
 
     public String pressHuluButton() {
         tv.setState(tv.getHuluState());
-        return "Loading Hulu...";
+        return "Loading Hulu...\n";
     }
 
     public String pressMovieButton() {
-        return "Home: You must pick an app to show movies";
+        return "Home: You must pick an app to show movies\n";
     }
 
     public String pressTVButton() {
-        return "Home: You must pick an app to show TV shows";
+        return "Home: You must pick an app to show TV shows\n";
     }
 }

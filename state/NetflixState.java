@@ -1,13 +1,13 @@
 public class NetflixState implements State {
 
     private TV tv; 
-    private String[] movies = {"- The Land Before Time\n",
-                               "- Frozen\n",
-                               "- The Little Mermaid\n",
+    private String[] movies = {"- The Land Before Time",
+                               "- Frozen",
+                               "- The Little Mermaid",
                                "- Ice Age\n"};
-    private String[] tvShows = {"- Peppa Pig\n",
-                                "- My Little Pony\n",
-                                "- Garfield\n",
+    private String[] tvShows = {"- Peppa Pig",
+                                "- My Little Pony",
+                                "- Garfield",
                                 "- Teenage Mutant Ninja Turtles\n"}; 
 
     public NetflixState(TV tv) {
@@ -16,16 +16,16 @@ public class NetflixState implements State {
 
     public String pressHomeButton() {
         tv.setState(tv.getHomeState());
-        return "Loading Home Screen..."; 
+        return "Loading Home Screen...\n"; 
     }
 
     public String pressNetflixButton() {
-        return "TV is already on Netflix";
+        return "TV is already on Netflix\n";
     }
 
     public String pressHuluButton() {
         tv.setState(tv.getHuluState());
-        return "Loading Hulu...";
+        return "Loading Hulu...\n";
     }
 
     public String pressMovieButton() {
