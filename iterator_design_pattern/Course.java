@@ -17,9 +17,15 @@ public class Course {
     }
 
     // will add assignment to array with given assignment 
+    /**
+     * @param title
+     * @param description
+     * @param topic
+     */
+    
     public void addAssignment(String title, String description, Topic topic) {
         Assignment assignment = new Assignment(title, description, topic);
-        if (count >= assignments.length) { // if there is not enough space the array will grow
+        if (count >= 5) { // if there is not enough space the array will grow
 			growArray(assignments);
             assignments[count] = assignment; // then assign the index with parameter 
 		    count = count + 1; // reset the count to next index 
