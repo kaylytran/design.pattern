@@ -1,14 +1,14 @@
 public class NetflixState implements State {
 
     private TV tv; 
-    private String[] movies = {"- The Land Before Time",
-                               "- Frozen",
-                               "- The Little Mermaid",
-                               "- Ice Age"};
-    private String[] tvShows = {"- Peppa Pig",
-                                "- My Little Pony",
-                                "- Garfield",
-                                "- Teenage Mutant Ninja Turtles"}; 
+    private String[] movies = {"- The Land Before Time\n",
+                               "- Frozen\n",
+                               "- The Little Mermaid\n",
+                               "- Ice Age\n"};
+    private String[] tvShows = {"- Peppa Pig\n",
+                                "- My Little Pony\n",
+                                "- Garfield\n",
+                                "- Teenage Mutant Ninja Turtles\n"}; 
 
     public NetflixState(TV tv) {
         this.tv = tv; 
@@ -30,12 +30,12 @@ public class NetflixState implements State {
 
     public String pressMovieButton() {
         String movieString = String.join("\n", movies);
-        return movieString; 
+        return "Netflic Movies:\n" + movieString; 
     }
 
     public String pressTVButton() {
         String tvString = String.join("\n", tvShows);
-        return tvString; 
+        return "Netflix TV Shows:\n" + tvString; 
     }
     
 }
