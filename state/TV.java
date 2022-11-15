@@ -26,11 +26,11 @@ public class TV {
     }
 
     public String pressMovieButton() {
-        return pressMovieButton(); 
+        return state.pressMovieButton(); 
     }
 
     public String pressTVButton() {
-        return pressTVButton(); 
+        return state.pressTVButton(); 
     }
 
     public void setState(State state) {
