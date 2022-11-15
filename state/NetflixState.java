@@ -29,13 +29,13 @@ public class NetflixState implements State {
     }
 
     public String pressMovieButton() {
-        tv.setState(tv.pressMovieButton());
-        return NetflixState.movies(); 
+        String movieString = String.join("\n", movies);
+        return movieString; 
     }
 
     public String pressTVButton() {
-        tv.setState(tv.pressTVButton());
-        return NetflixState.tvShows(); 
+        String tvString = String.join("\n", tvShows);
+        return tvString; 
     }
     
 }
