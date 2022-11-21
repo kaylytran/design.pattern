@@ -9,22 +9,26 @@ public class Cassett implements AnalogAlbum{
     }
 
     public String play() {
-        return songs.get(currentIndex);   
+        String song = songs.get(currentIndex); 
+        currentIndex += 1;
+        return "Playing song " + currentIndex + ": " + song;
     }
 
     public String rewind() {
-        return "Rewinding to song "; 
+        currentIndex -= 1; 
+        return "Rewinding to song " + (currentIndex + 1); 
     }
 
     public String ffwd() {
-        return "Forward to song "; 
+        currentIndex += 1;
+        return "Forward to song " + (currentIndex + 1); 
     }
 
     public String pause() {
-        return "";
+        return "*********** Pause ***************";
     }
 
     public String stopEject() {
-        return "";
+        return "*********** Ejecting ***************";
     }
 }
