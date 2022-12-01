@@ -21,7 +21,7 @@ public class CD implements DigitalAlbum {
 
     public String prevSong() {
         currentIndex -= 1; 
-        return songs.get(currentIndex);
+        return songs.get(currentIndex - 1);
     }
     public String nextSong() {
         currentIndex += 1; 
